@@ -7,3 +7,4 @@ function remove(sentence, str){
 }
 
 console.log(remove('This is some text.', 'is'));
+console.log(remove('Yes, London. You know: fish, chips, cup ‘o tea, bad food, worse weather', 'o'));
