@@ -7,7 +7,14 @@ function shallowCompare(a, b){
     let keys2 = Object.keys(b);
 
     if (keys1.length !== keys2.length) return false;
-    else return true;
+
+    for (let key of keys1) {
+        if (a[key] !== b[key]){
+            return false;
+        }
+    }
+
+    return true;
 }
 
 console.log(shallowCompare({a: '1'}, {a: '1'}));
