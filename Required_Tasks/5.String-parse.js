@@ -8,7 +8,6 @@ function sumOfNumb(str) {
     for (let i = 0; i <= str.length; i++){
         if (/[0-9-]/.test(str[i]) && str[i+1] !== '-'){
             tmp += str[i];
-            sum+=tmp;
         } else {
             sum += Number(tmp);
             tmp = "";
